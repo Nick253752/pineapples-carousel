@@ -1,0 +1,11 @@
+{
+  "session": "ASX",
+  "date": "Wednesday, 30 September 2026",
+  "hook_line": "Three opportunities built around today's CPI print, a hawkish RBA and US yields at an eighteen-year high, plus the full set of outcomes from last night's US session, including one that reached its stop, one that reached its target, and two that are still in play as the week heads toward Friday's close, which is where anything still open gets closed out at the official closing price. Then there's the CPI print, the China PMIs and US PCE tonight, and after that the ISM survey on Thursday and non-farm payrolls on Friday night, any one of which could move yields, the Aussie dollar and every idea on the next few slides.",
+  "ideas": [
+    {"ticker": "CDA", "dir": "Long", "entry": "63.60", "stop": "61.40", "target": "68.00", "rr": "2.0:1", "conf": "45%"}
+  ],
+  "outcomes": [
+    {"ticker": "BA", "dir": "Short", "result": "Still in play", "entry": "187.50"}
+  ]
+}

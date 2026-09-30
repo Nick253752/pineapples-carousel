@@ -1,0 +1,18 @@
+# Reference docs contain private details (webhook, addresses): never commit
+reference/
+
+# Access tokens: never commit
+secrets/
+
+# Local Python + browser installs
+.venv/
+.pw-browsers/
+__pycache__/
+
+# Render and test output
+out/
+tests/out/
+*.png
+
+# The build brief (internal)
+BUILD-STEP1.md

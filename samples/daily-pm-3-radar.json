@@ -1,0 +1,69 @@
+{
+  "edition": "pm",
+  "date_long": "Wednesday, 30 September 2026",
+  "cover_headline": "Hot CPI lifts the Aussie, trims tech",
+  "cover_subhead": "August inflation came in above forecasts, sending the dollar higher and rate-sensitive tech lower into the close.",
+  "cover_pullquote": "Our read: November is now live for the RBA, and the market knows it.",
+  "ticker": {
+    "asx200": {
+      "val": "8,684",
+      "chg": "−0.29%",
+      "dir": "down"
+    },
+    "sp500": {
+      "val": "7,412",
+      "chg": "−0.19% (prior)",
+      "dir": "down"
+    },
+    "nasdaq": {
+      "val": "24,880",
+      "chg": "−0.27% (prior)",
+      "dir": "down"
+    },
+    "audusd": {
+      "val": "0.7012",
+      "chg": "+0.39%",
+      "dir": "up"
+    },
+    "btc": {
+      "val": "US$81,050",
+      "chg": "0.0%",
+      "dir": "flat"
+    }
+  },
+  "big_story_headline": "A hot inflation print puts a November RBA hike firmly on the table",
+  "big_story_intro": "The ASX 200 slipped 0.3% as CPI beat forecasts, with tech and property lagging while banks held firm. The Aussie dollar reclaimed 70 US cents, and tonight the focus shifts to US PCE inflation.",
+  "stats": [
+    {
+      "k": "ASX 200 close",
+      "v": "8,684"
+    },
+    {
+      "k": "InfoTech sector",
+      "v": "−1.8%"
+    },
+    {
+      "k": "AUD/USD",
+      "v": "0.7012"
+    }
+  ],
+  "big_story_outro": "Tonight's PCE decides whether US yields push higher still.",
+  "pineapple_take_quote": "The RBA isn't finished, and today's tape just said so out loud.",
+  "pineapple_take_body": "A stronger dollar and weaker tech on the same day is the market pricing another hike. We'd expect rate-sensitive names to stay heavy until the November meeting, unless tonight's US data cools yields fast.",
+  "radar": [
+    {
+      "time": "10:15pm AEST",
+      "desc": "US ADP private payrolls for September."
+    },
+    {
+      "time": "Thu 12:00am AEST",
+      "desc": "US August PCE inflation, the Fed's preferred gauge."
+    },
+    {
+      "time": "Thu 6:05am AEST",
+      "desc": "Micron earnings after the US close, a read on AI chip demand."
+    }
+  ],
+  "index_figure": "−0.3 🍍",
+  "index_body": "About a third of a pineapple off the hundred today. The fruit bowl survives."
+}

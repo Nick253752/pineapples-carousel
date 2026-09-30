@@ -1,0 +1,77 @@
+{
+  "edition": "am",
+  "date_long": "Wednesday, 30 September 2026",
+  "cover_headline": "Banks & miners <lead> a \"risk-on\" day's rally",
+  "cover_subhead": "The US 10-year hit 5.28% overnight, its highest since 2007, and today's August CPI print decides whether local stocks shrug it off.",
+  "cover_pullquote": "Our read: <b>not bold</b> & 'quoted' — \"still\" plain text.",
+  "ticker": {
+    "asx200": {
+      "val": "8,709",
+      "chg": "Fut. −15pts",
+      "dir": "down"
+    },
+    "sp500": {
+      "val": "7,412",
+      "chg": "−0.19%",
+      "dir": "down"
+    },
+    "nasdaq": {
+      "val": "24,880",
+      "chg": "−0.27%",
+      "dir": "down"
+    },
+    "audusd": {
+      "val": "0.6985",
+      "chg": "−0.47%",
+      "dir": "down"
+    },
+    "btc": {
+      "val": "US$81,200",
+      "chg": "+0.8%",
+      "dir": "up"
+    }
+  },
+  "big_story_headline": "US yields at an 18-year high put rate-sensitive ASX names on notice",
+  "big_story_intro": "Wall Street slipped as the US 10-year yield touched 5.28% after soft confidence data failed to calm rate fears. Futures point to a softer ASX open, with tech and property most exposed, and August CPI at 11:30am is the day's big swing factor.",
+  "stats": [
+    {
+      "k": "S&P 500 <close>",
+      "v": "7,412 & up"
+    },
+    {
+      "k": "US 10-year yield",
+      "v": "5.28%"
+    },
+    {
+      "k": "Nov RBA hike odds",
+      "v": "~56%"
+    },
+    {
+      "k": "Brent crude",
+      "v": "US$104.80"
+    }
+  ],
+  "big_story_outro": "A hot CPI firms a November hike; a soft one gives tech some breathing room.",
+  "pineapple_take_quote": "Expect a cautious, yield-watching morning that turns on the CPI print.",
+  "pineapple_take_body": "The RBA has already said it's prepared to keep lifting, and Westpac sees headline inflation near 4%. If the print lands hot, rate-sensitive tech and REITs wear it; if it's soft, today's dip looks like a buying window for the patient.",
+  "radar": [
+    {
+      "time": "11:30am <AEST>",
+      "desc": "Q&A with the RBA's \"hawks\" — <live>"
+    },
+    {
+      "time": "11:30am AEST",
+      "desc": "China official PMIs for September, just before Golden Week."
+    },
+    {
+      "time": "10:15pm AEST",
+      "desc": "US ADP private payrolls for September."
+    },
+    {
+      "time": "Thu 12:00am AEST",
+      "desc": "US August PCE inflation, the Fed's preferred gauge."
+    }
+  ],
+  "index_figure": "−0.2 🍍",
+  "index_body": "Futures suggest a fifth of a pineapple slips off the hundred at the open. Hardly a fruit salad."
+}

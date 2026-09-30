@@ -1,0 +1,9 @@
+{
+  "session": "ASX",
+  "date": "Thursday, 1 October 2026",
+  "hook_line": "1 opportunity, and nothing to recap yet",
+  "ideas": [
+    {"ticker": "CDA", "dir": "Long", "entry": "63.60", "stop": "61.40", "target": "68.00", "rr": "2.0:1", "conf": "45%", "flyer": true}
+  ],
+  "outcomes": []
+}

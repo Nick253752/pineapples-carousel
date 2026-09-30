@@ -1,0 +1,15 @@
+{
+  "session": "ASX",
+  "date": "Wednesday, 30 September 2026",
+  "hook_line": "3 opportunities + recent trade outcomes",
+  "ideas": [
+    {"ticker": "CDA", "dir": "Long", "entry": "63.60", "stop": "61.40", "target": "68.00", "rr": "2.0:1", "conf": "45%"},
+    {"ticker": "MP1", "dir": "Long", "entry": "20.30", "stop": "19.70", "target": "21.50", "rr": "2.0:1", "conf": "40%"},
+    {"ticker": "AUD/USD", "dir": "Long", "entry": "0.6980", "stop": "0.6945", "target": "0.7050", "rr": "2.0:1", "conf": "40%"}
+  ],
+  "outcomes": [
+    {"ticker": "NVDA", "dir": "Long", "result": "Not triggered", "entry": "227.00"},
+    {"ticker": "BA", "dir": "Short", "result": "Still in play", "entry": "187.50"},
+    {"ticker": "EUR/USD", "dir": "Short", "result": "Not triggered", "entry": "1.1385"}
+  ]
+}

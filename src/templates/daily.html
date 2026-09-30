@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--green:#1f3d2b;
+--gold:#e8a93b;
+--cream:#FBF3E4;
+--rust:#C1592B;
+--ink:#2a2a26;
+--up:#3f7d4f;
+--down:#a8433a;
+--line:rgba(31,61,43,0.14);
+}
+*{box-sizing:border-box; margin:0; padding:0;}
+body{ font-family: Karla, Arial, Helvetica, sans-serif; }
+.slide{ width:1080px; height:1350px; position:relative; overflow:hidden; }
+.eyebrow{ font-size:29px; letter-spacing:2.5px; text-transform:uppercase; font-weight:700; }
+.serif{ font-family: Bitter, Georgia, 'Times New Roman', serif; }
+.footer-mark{ margin-top:auto; display:flex; align-items:center; gap:14px; padding-top:24px; }
+.footer-mark .logo-emoji{ font-size:30px; line-height:1; }
+.footer-mark .wm{ font-family:Bitter,Georgia,serif; font-weight:700; font-size:26px; letter-spacing:1px; }
+.footer-mark .pagenum{ margin-left:auto; font-size:23px; font-weight:700; }
+#s1{ background: var(--green); color:var(--cream); padding:80px 76px 64px; display:flex; flex-direction:column; }
+#s1 .brandrow{ display:flex; align-items:center; gap:20px; }
+#s1 .brandrow .logo-emoji{ font-size:80px; line-height:1; }
+#s1 .wordmark{ font-size:48px; color:var(--gold); font-weight:700; letter-spacing:1px; font-family:Bitter,Georgia,serif;}
+#s1 .tagline{ margin-top:8px; font-size:27px; color:var(--cream); opacity:0.78; letter-spacing:1px;}
+#s1 .datebar{ margin-top:60px; font-size:29px; color:var(--gold); font-weight:700; }
+#s1 .headline{ margin-top:24px; font-size:76px; line-height:1.12; font-weight:700; }
+#s1 .subhead{ margin-top:32px; font-size:32px; line-height:1.5; color:var(--cream); opacity:0.9; max-width:920px;}
+#s1 .spacer{ flex:1; }
+#s1 .quote-block{ margin-top:56px; padding:36px 40px; background:rgba(251,243,228,0.07); border:1px solid rgba(251,243,228,0.2); border-radius:20px; font-family:Bitter,Georgia,serif; font-size:33px; line-height:1.5; font-style:italic; color:var(--cream); max-width:900px; }
+#s1 .ticker{ display:flex; flex-wrap:wrap; gap:0; border-top:1px solid rgba(251,243,228,0.25); border-bottom:1px solid rgba(251,243,228,0.25); padding:30px 0; }
+#s1 .tick{ width:33.33%; padding:12px 18px 12px 0; }
+#s1 .tick .name{ font-size:22px; opacity:0.68; letter-spacing:0.5px; text-transform:uppercase;}
+#s1 .tick .val{ font-size:34px; font-weight:700; margin-top:5px; }
+#s1 .tick .chg{ font-size:22px; font-weight:700; margin-top:3px; }
+#s1 .up{ color:#8fd39f; } #s1 .down{ color:#e79b91; } #s1 .flat{ color:#d8cfa9; }
+#s1 .swipe{ margin-top:34px; font-size:27px; color:var(--gold); font-weight:700; }
+.content{ background:var(--cream); color:var(--ink); padding:76px; display:flex; flex-direction:column; }
+.content .eyebrow{ color:var(--green); }
+.content .bar{ width:70px; height:9px; background:var(--gold); margin-top:18px; border-radius:5px;}
+.content .headline{ margin-top:36px; font-size:58px; line-height:1.2; font-weight:700; color:var(--green); }
+.content .body{ margin-top:36px; font-size:31px; line-height:1.56; color:#3a372f; }
+.content .stat{ display:flex; justify-content:space-between; align-items:baseline; padding:20px 0; border-bottom:1px solid var(--line); font-size:29px; }
+.content .stat .k{ color:#5a5648; }
+.content .stat .v{ font-weight:700; }
+.content .footer-mark .wm{ color:var(--green); }
+.content .footer-mark .pagenum{ color:#8a8672; }
+.radar-item{ padding:26px 0; border-bottom:1px solid var(--line); }
+.radar-item:last-child{ border-bottom:none; }
+.radar-item .time{ font-size:24px; font-weight:700; color:#b9832a; text-transform:uppercase; letter-spacing:0.5px;}
+.radar-item .desc{ font-size:30px; margin-top:8px; line-height:1.42; color:#3a372f;}
+#s3{ background:var(--green); color:var(--cream); padding:76px; display:flex; flex-direction:column; }
+#s3 .eyebrow{ color:var(--gold); }
+#s3 .bar{ width:70px; height:9px; background:var(--gold); margin-top:18px; border-radius:5px;}
+#s3 .quote{ margin-top:44px; font-family:Bitter,Georgia,serif; font-size:47px; line-height:1.4; font-weight:700; }
+#s3 .body2{ margin-top:38px; font-size:31px; line-height:1.58; color:var(--cream); opacity:0.94; }
+#s3 .disclaimer{ margin-top:26px; font-size:24px; opacity:0.68; }
+#s3 .footer-mark .wm{ color:var(--gold); }
+#s3 .footer-mark .pagenum{ color:rgba(251,243,228,0.6); }
+#s5{ background:var(--green); color:var(--cream); padding:80px 76px 64px; display:flex; flex-direction:column; }
+#s5 .eyebrow{ color:var(--gold); }
+#s5 .idxcard{ margin-top:44px; background:rgba(251,243,228,0.08); border:1px solid rgba(251,243,228,0.22); border-radius:24px; padding:56px 48px; text-align:center; }
+#s5 .idxcard .figure{ font-family:Bitter,Georgia,serif; font-size:120px; font-weight:700; color:var(--gold); line-height:1; }
+#s5 .idxcard .figure-label{ margin-top:14px; font-size:28px; font-weight:700; letter-spacing:0.5px; }
+#s5 .idxcard .idx-sub{ margin-top:24px; font-size:27px; line-height:1.5; color:var(--cream); opacity:0.85; }
+#s5 .spacer{ flex:1; }
+#s5 .cta{ font-size:40px; font-weight:700; color:var(--cream); line-height:1.32; }
+#s5 .handles{ margin-top:20px; font-size:28px; color:var(--gold); font-weight:700; }
+#s5 .risk{ margin-top:36px; font-size:23px; line-height:1.55; color:var(--cream); opacity:0.75; border-top:1px solid rgba(251,243,228,0.25); padding-top:28px; }
+</style>
+</head>
+<body>
+
+<div class="slide" id="s1">
+<div class="brandrow">
+<div class="logo-emoji">🍍</div>
+<div><div class="wordmark">PINEAPPLES</div></div>
+</div>
+<div class="tagline">DAILY MARKET BRIEF · WEALTH, WELCOMED.</div>
+<div class="datebar" data-field="date_long">{{date_long}} · {{edition_label}}</div>
+<div class="headline" data-field="cover_headline">{{cover_headline}}</div>
+<div class="subhead" data-field="cover_subhead">{{cover_subhead}}</div>
+<div class="quote-block" data-field="cover_pullquote">{{cover_pullquote}}</div>
+<div class="spacer"></div>
+<div class="ticker">
+<div class="tick"><div class="name">ASX 200</div><div class="val" data-field="ticker.asx200.val">{{asx200_val}}</div><div class="chg {{asx200_class}}" data-field="ticker.asx200.chg">{{asx200_chg}}</div></div>
+<div class="tick"><div class="name">S&amp;P 500</div><div class="val" data-field="ticker.sp500.val">{{sp500_val}}</div><div class="chg {{sp500_class}}" data-field="ticker.sp500.chg">{{sp500_chg}}</div></div>
+<div class="tick"><div class="name">Nasdaq</div><div class="val" data-field="ticker.nasdaq.val">{{nasdaq_val}}</div><div class="chg {{nasdaq_class}}" data-field="ticker.nasdaq.chg">{{nasdaq_chg}}</div></div>
+<div class="tick"><div class="name">AUD/USD</div><div class="val" data-field="ticker.audusd.val">{{audusd_val}}</div><div class="chg {{audusd_class}}" data-field="ticker.audusd.chg">{{audusd_chg}}</div></div>
+<div class="tick"><div class="name">Bitcoin</div><div class="val" data-field="ticker.btc.val">{{btc_val}}</div><div class="chg {{btc_class}}" data-field="ticker.btc.chg">{{btc_chg}}</div></div>
+<div class="tick"></div>
+</div>
+<div class="swipe">Swipe for the full brief →</div>
+</div>
+
+<div class="slide content" id="s2">
+<div class="eyebrow">01 · The Big Story</div>
+<div class="bar"></div>
+<div class="headline" data-field="big_story_headline">{{big_story_headline}}</div>
+<div class="body" data-field="big_story_intro">{{big_story_intro}}</div>
+<div style="margin-top:32px;">
+{{stat_rows}}
+</div>
+<div class="body" style="margin-top:30px;" data-field="big_story_outro">{{big_story_outro}}</div>
+<div class="footer-mark"><div class="logo-emoji" style="font-size:28px;">🍍</div><div class="wm">PINEAPPLES</div><div class="pagenum">1 / 3 HEADLINES</div></div>
+</div>
+
+<div class="slide" id="s3">
+<div class="eyebrow">02 · The Pineapple Take</div>
+<div class="bar"></div>
+<div class="quote" data-field="pineapple_take_quote">{{pineapple_take_quote}}</div>
+<div class="body2" data-field="pineapple_take_body">{{pineapple_take_body}}</div>
+<div class="disclaimer">Our read, not a forecast — and not personal advice. Markets carry real risk of loss.</div>
+<div class="footer-mark"><div class="logo-emoji" style="font-size:28px;">🍍</div><div class="wm">PINEAPPLES</div><div class="pagenum">2 / 3 HEADLINES</div></div>
+</div>
+
+<div class="slide content" id="s4">
+<div class="eyebrow">03 · On The Radar</div>
+<div class="bar"></div>
+<div class="headline" style="font-size:50px;">What could move the next session</div>
+<div style="margin-top:26px;">
+{{radar_rows}}
+</div>
+<div class="footer-mark"><div class="logo-emoji" style="font-size:28px;">🍍</div><div class="wm">PINEAPPLES</div><div class="pagenum">3 / 3 HEADLINES</div></div>
+</div>
+
+<div class="slide" id="s5">
+<div class="brandrow" style="display:flex; align-items:center; gap:16px;"><div class="logo-emoji" style="font-size:46px;">🍍</div><div class="wordmark" style="font-family:Bitter,Georgia,serif; color:var(--gold); font-weight:700; font-size:32px;">PINEAPPLES</div></div>
+<div class="eyebrow" style="margin-top:40px;">🍍 The Pineapple Index</div>
+<div class="idxcard">
+<div class="figure" data-field="index_figure">{{index_figure}}</div>
+<div class="figure-label" data-field="index_label">{{index_label}}</div>
+<div class="idx-sub" data-field="index_body">{{index_body}}</div>
+</div>
+<div class="spacer"></div>
+<div class="cta">The full brief lands in your inbox daily, before every session.</div>
+<div class="handles">wearepineapples.com · @Pineapple_Desk (IG / X) · Pineapple Desk (FB)</div>
+<div class="risk">General information only, not personal financial advice — we don't know your circumstances, goals or risk tolerance. Trading and investing carry a real risk of loss, including of your full capital. Past performance doesn't predict future results.</div>
+</div>
+
+</body>
+</html>

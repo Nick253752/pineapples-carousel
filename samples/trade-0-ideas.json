@@ -1,0 +1,10 @@
+{
+  "session": "US",
+  "date": "Friday, 2 October 2026",
+  "hook_line": "No new opportunities tonight + recent trade outcomes",
+  "ideas": [],
+  "outcomes": [
+    {"ticker": "BA", "dir": "Short", "result": "Closed at week's end", "entry": "187.50", "exit": "184.10", "rr": "2.0:1"},
+    {"ticker": "NVDA", "dir": "Long", "result": "Not triggered", "entry": "227.00"}
+  ]
+}

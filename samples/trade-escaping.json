@@ -1,0 +1,12 @@
+{
+  "session": "ASX",
+  "date": "Wednesday, 30 September 2026",
+  "hook_line": "M&A <watch>: 2 \"value gaps\" & Monday's outcomes",
+  "ideas": [
+    {"ticker": "S&P<500>", "dir": "Short", "entry": "<7,420", "stop": "7,480", "target": "7,300", "rr": "2.0:1", "conf": "40%"},
+    {"ticker": "AT&T", "dir": "Long", "entry": "\"27.10\"", "stop": "26.60", "target": "28.10", "rr": "2.0:1", "conf": "45%"}
+  ],
+  "outcomes": [
+    {"ticker": "L&G", "dir": "Long", "result": "Closed at week's end", "entry": "2.41", "exit": "<2.50>", "rr": "2.0:1"}
+  ]
+}
