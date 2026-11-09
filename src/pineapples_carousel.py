@@ -48,8 +48,9 @@ MUTED = "#6b6459"
 LABEL_GRAY = "#a89b7f"
 
 TICKERS = ["asx200", "sp500", "nasdaq", "audusd", "btc"]
-RESULTS = ["Not triggered", "Still in play", "Stop reached", "Target reached", "Closed at week's end"]
-CONCLUDED = {"Stop reached", "Target reached", "Closed at week's end"}
+RESULTS = ["Not triggered", "Still in play", "Stop reached", "Target reached", "Closed after 3 days",
+           "Closed at week's end"]
+CONCLUDED = {"Stop reached", "Target reached", "Closed after 3 days", "Closed at week's end"}
 
 # Result pill colours: (text, background). "Closed at week's end" is new; it uses
 # the brand green as a solid pill so it reads as settled and differs from the rest.
@@ -58,9 +59,11 @@ PILL_COLORS = {
     "Still in play": (GREEN, "#e3ecdf"),
     "Stop reached": (TERRACOTTA, "#f3e2d6"),
     "Target reached": (GOLD_DARK, "#faecd0"),
+    "Closed after 3 days": (CREAM, GREEN),
     "Closed at week's end": (CREAM, GREEN),
 }
-EXIT_COLORS = {"Stop reached": TERRACOTTA, "Target reached": GOLD_DARK, "Closed at week's end": GREEN}
+EXIT_COLORS = {"Stop reached": TERRACOTTA, "Target reached": GOLD_DARK, "Closed after 3 days": GREEN,
+               "Closed at week's end": GREEN}
 
 DEFAULT_INDEX_LABEL = "per 100 pineapples ($5k) in the index"
 

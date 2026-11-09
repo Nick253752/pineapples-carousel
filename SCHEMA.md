@@ -99,10 +99,10 @@ Cover → Today's Opportunities (3 per page) → Trade Outcomes (3 per page) →
 | `ideas[].flyer` | true/false, *optional* | Shows "Higher RR · lower confidence" (at most one idea). | |
 | `outcomes` | list (0 or more) | Same recap set as the email. | |
 | `outcomes[].ticker`, `.dir` | text, `"Long"`/`"Short"` | As above. | 12 |
-| `outcomes[].result` | one of `Not triggered`, `Still in play`, `Stop reached`, `Target reached`, `Closed at week's end` | Exact spelling, straight apostrophe. | |
+| `outcomes[].result` | one of `Not triggered`, `Still in play`, `Stop reached`, `Target reached`, `Closed after 3 days`, `Closed at week's end` | Exact spelling, straight apostrophe. | |
 | `outcomes[].entry` | text | Originally published entry. | 10 |
-| `outcomes[].exit` | text | Required for the last three results: the stop/target level reached, or the week-end close. Ignored otherwise. | 10 |
-| `outcomes[].rr` | text | Required for the last three results: the idea's stated RR. Ignored otherwise. | 7 |
+| `outcomes[].exit` | text | Required for the last four results: the stop/target level reached, or the closing price at the 3-day or week-end exit. Ignored otherwise. | 10 |
+| `outcomes[].rr` | text | Required for the last four results: the idea's stated RR. Ignored otherwise. | 7 |
 
 ```json
 {
